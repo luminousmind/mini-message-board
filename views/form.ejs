@@ -8,14 +8,15 @@
 </head>
 
 <body>
-    <h3>New Message</h3>
-    <form action="/new" method="post">
-        <label for="author">Author</label>
-        <input type="text" name="author" id="author">
-        <label for="message">Message</label>
-        <input type="text" name="message" id="message">
-        <input type="submit" value="Submit">
-    </form>
+    <%- include("links" %>) %>
+        <h3>New Message</h3>
+        <form action="/new" method="post">
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message">
+            <input type="submit" value="Submit">
+        </form>
 </body>
 
 </html>

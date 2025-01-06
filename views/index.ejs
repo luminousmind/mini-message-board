@@ -8,21 +8,23 @@
 </head>
 
 <body>
-    <ul>
-        <% messages.map((message)=> { %>
-            <li>
-                <h4>
-                    <%= message.text %>
-                </h4>
-                <p>
-                    <%= message.user %>
-                </p>
-                <p>
-                    <%= message.added %>
-                </p>
-            </li>
-            <% }) %>
-    </ul>
+    <%- include("links" %>) %>
+        <h3>Messages</h3>
+        <ul>
+            <% messages.map((message)=> { %>
+                <li>
+                    <h4>
+                        <%= message.text %>
+                    </h4>
+                    <p>
+                        <%= message.user %>
+                    </p>
+                    <p>
+                        <%= message.added %>
+                    </p>
+                </li>
+                <% }) %>
+        </ul>
 </body>
 
 </html>
